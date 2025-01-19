@@ -261,6 +261,86 @@ void autonomous(void) {
   RightMotor3.spin(reverse);
   LeftMotor3.spin(reverse);
   wait(750, msec);
+  RightMotor1.spin(reverse);  // straight
+  LeftMotor1.spin(reverse);
+  RightMotor2.spin(forward);
+  LeftMotor2.spin(reverse);
+  RightMotor3.spin(reverse);
+  LeftMotor3.spin(forward);
+  wait(2, sec);
+  IntakeMotor.setVelocity(100, percent);
+  IntakeMotor.spin(reverse);
+  BeltMotor.setVelocity(100, percent);
+  BeltMotor.spin(forward);
+  wait(500, msec);
+  RightMotor1.spin(reverse);  // turn left
+  LeftMotor1.spin(forward);
+  RightMotor2.spin(forward);
+  LeftMotor2.spin(forward);
+  RightMotor3.spin(reverse);
+  LeftMotor3.spin(reverse);
+  wait(650, msec);
+  RightMotor1.spin(reverse);  // straight
+  LeftMotor1.spin(reverse);
+  RightMotor2.spin(forward);
+  LeftMotor2.spin(reverse);
+  RightMotor3.spin(reverse);
+  LeftMotor3.spin(forward);
+  wait(500, msec);
+  IntakeMotor.setVelocity(100, percent);
+  IntakeMotor.spin(reverse);
+  BeltMotor.setVelocity(100, percent);
+  BeltMotor.spin(forward);
+  wait(500, msec);
+  RightMotor1.spin(forward);  // turn right
+  LeftMotor1.spin(reverse);
+  RightMotor2.spin(reverse);
+  LeftMotor2.spin(reverse);
+  RightMotor3.spin(forward);
+  LeftMotor3.spin(forward);
+  wait(700, msec);
+  RightMotor1.spin(reverse);  // straight
+  LeftMotor1.spin(reverse);
+  RightMotor2.spin(forward);
+  LeftMotor2.spin(reverse);
+  RightMotor3.spin(reverse);
+  LeftMotor3.spin(forward);
+  wait(500, msec);
+  IntakeMotor.setVelocity(100, percent);
+  IntakeMotor.spin(reverse);
+  BeltMotor.setVelocity(100, percent);
+  BeltMotor.spin(forward);
+  wait(500, msec);
+  RightMotor1.spin(forward);  // turn right
+  LeftMotor1.spin(reverse);
+  RightMotor2.spin(reverse);
+  LeftMotor2.spin(reverse);
+  RightMotor3.spin(forward);
+  LeftMotor3.spin(forward);
+  wait(1, sec);
+  LeftMotor1.spin(forward);  // back
+  RightMotor1.spin(reverse);
+  LeftMotor2.spin(forward);
+  RightMotor2.spin(forward);
+  RightMotor3.spin(reverse);
+  LeftMotor3.spin(reverse);
+  wait(400, msec);
+  RightMotor1.spin(forward);  // turn right
+  LeftMotor1.spin(reverse);
+  RightMotor2.spin(reverse);
+  LeftMotor2.spin(reverse);
+  RightMotor3.spin(forward);
+  LeftMotor3.spin(forward);
+  wait(500, msec);
+  LeftMotor1.spin(forward);  // back
+  RightMotor1.spin(reverse);
+  LeftMotor2.spin(forward);
+  RightMotor2.spin(forward);
+  RightMotor3.spin(reverse);
+  LeftMotor3.spin(reverse);
+  wait(3500, msec);
+  Piston1 = false;
+  Piston2 = false;
 }
 
 // Autonomous code
